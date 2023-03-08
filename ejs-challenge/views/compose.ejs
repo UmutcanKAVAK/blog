@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs') -%>
+<h1>Compose</h1> 
+<form action="/compose" method="post">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" name="title">
+        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Post</label>
+        
+        <textarea class="form-control" name="blog_content" id="exampleFormControlTextarea1" rows="6" ></textarea>
+    
+      </div>
+ <div class="align-right">
+     <button   class="btn btn-primary" type="submit" name="button">Publish</button>
+</div>
+     
+
+</form>
+
+<%- include('partials/footer.ejs') -%>
